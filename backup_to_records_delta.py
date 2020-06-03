@@ -69,6 +69,7 @@ def splitall(path):
 
 
 def build_file_dataframe(chosenDir, DF=None, ignoreThumbs=True):
+    '''Scrapes file attributes from the chosenDir path and returns them in a dataframe.'''
     def timestamp_to_date(timestamp):
         DT = datetime.fromtimestamp(timestamp)
         return DT.strftime("%m/%d/%Y, %H:%M:%S")
@@ -298,10 +299,6 @@ def main(backupDir, csvPath, acceptedMissingPath, mainDirectoryMountLetter, colu
 
 
 
-#TODO: Process dataframes into single dataframe
-#TODO: Remove rows for files that should be missing
-
-
 if __name__ == '__main__':
     acceptableMissingCSV = "acceptable_missing.csv"
     #resultsFile = "files_delta.csv"
@@ -312,7 +309,7 @@ if __name__ == '__main__':
     #resultsPath = establish_csv(resultsFile, columnNames)
     while not os.path.isdir(backUp):
         backUp = input("Enter path to backup directory: ")
-        if backUp == 'td':
+        if backUp == 'test': #For quick, sloppyu testing
             print("Testing Commencing...")
             backUp = r'F:\29xx   University House - Copy'
             otherDir =  r'F:\29xx   University House'
@@ -323,6 +320,8 @@ if __name__ == '__main__':
 
 
 #TODO: accreptable_missing needs to eliminate acceptable missing files from dataframe
+#TODO: Process dataframes into single dataframe
+#TODO: Remove rows for files that should be missing
 
 
 
