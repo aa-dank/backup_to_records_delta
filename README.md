@@ -10,7 +10,7 @@
  -  file_df_discrepancies(targetDF, currentDF)
       -  This function takes two dataframes of files and their attributes and eliminates directories on the targetDF that are very similar to a file represented in the currentDF dataframe.
  -  build_file_dataframe(chosenDir, DF=None, ignoreThumbs=True)
-      -  This function scrapes files and their attributes into a datframe.<br/>
+      -  This function scrapes files and their attributes into a dataframe.<br/>
   <br/>
   Foremost on the wishlist for this script is to include a way to include a spreadsheet of files missing from current file server that are supposed to be missing. These would be eliminated from the resulting spreadsheet. There are some references to this feature in the code (acceptable_missing)
 
