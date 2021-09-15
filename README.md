@@ -8,7 +8,7 @@
  -  convert_backup_path(backUpPath, mainPath)<br/>
     -  This function takes a directory path from the backup image (backUpPath) and the path to the current file server to return the equivalent path of backUpPath on the current records server. This function is necessary because major directories on the file server were subtly renamed.
  -  file_df_discrepancies(targetDF, currentDF)
-      -  This function takes two dataframes of files and their attributes and eliminates direcories on the targetDF that are very similar to a file represented in the currentDF dataframe.
+      -  This function takes two dataframes of files and their attributes and eliminates directories on the targetDF that are very similar to a file represented in the currentDF dataframe.
  -  build_file_dataframe(chosenDir, DF=None, ignoreThumbs=True)
       -  This function scrapes files and their attributes into a datframe.<br/>
   <br/>
